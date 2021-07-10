@@ -1,9 +1,8 @@
-
 ---
 title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
+output:
+    html_document:
+      keep_md: true
 ---
 
 ## Introduction
@@ -132,7 +131,7 @@ ggplot(steps_data, aes(x = spd)) +
     labs(title = "Histogram of steps per day", x = "Steps", y = "Frequency")
 ```
 
-![](C:\Users\ULTIMA~1\DOCUME~1\ADATAS~1\R_code\REPDAT~1\PA1_TE~1/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](C:\Users\Ultimate LaForsch\Documents\A Data Science and Engineering\R_code\RepData_PeerAssessment1\PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
 
 ```r
 mean_spd <- mean(steps_data$spd)
@@ -157,7 +156,7 @@ ggplot(avg_act_pattern, aes(x=interval, y=steps)) +
   geom_line(color = "blue")
 ```
 
-![](C:\Users\ULTIMA~1\DOCUME~1\ADATAS~1\R_code\REPDAT~1\PA1_TE~1/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](C:\Users\Ultimate LaForsch\Documents\A Data Science and Engineering\R_code\RepData_PeerAssessment1\PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 ```r
 max_intervall <- avg_act_pattern[which.max(avg_act_pattern$steps),]
@@ -212,7 +211,7 @@ ggplot(steps_clean_data, aes(x = spd)) +
     labs(title = "Histogram of steps per day", x = "Steps", y = "Frequency")
 ```
 
-![](C:\Users\ULTIMA~1\DOCUME~1\ADATAS~1\R_code\REPDAT~1\PA1_TE~1/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![](C:\Users\Ultimate LaForsch\Documents\A Data Science and Engineering\R_code\RepData_PeerAssessment1\PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
 
 ```r
 mean_clean_spd <- mean(steps_clean_data$spd)
@@ -247,6 +246,6 @@ panel_graph <- ggplot(avg_act_pattern_clean, aes(x=interval, y=steps, color=dayt
 print(panel_graph)
 ```
 
-![](C:\Users\ULTIMA~1\DOCUME~1\ADATAS~1\R_code\REPDAT~1\PA1_TE~1/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](C:\Users\Ultimate LaForsch\Documents\A Data Science and Engineering\R_code\RepData_PeerAssessment1\PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 <br>
 As one would expect there are differences in activity patterns between weekdays and weekends.
