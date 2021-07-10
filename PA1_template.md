@@ -143,7 +143,7 @@ Mean: 10766.19 <br>
 Median: 10765 <br>
 
 
-## What is the average daily activity pattern?
+## What is the average daily activity pattern??
 
 
 ```r
